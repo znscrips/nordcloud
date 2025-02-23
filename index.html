@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedagem de Bots Discord</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospede seu Bot Discord e mantenha-o online em tempo real!</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Envio de Arquivo ZIP</h2>
+            <input type="file" id="bot-file" accept=".zip" required>
+            <button onclick="uploadBot()">Enviar</button>
+        </section>
+        <section id="control-section">
+            <h2>Controle do Bot</h2>
+            <p>Status: <span id="bot-status">Desligado</span></p>
+            <button id="start-btn" onclick="startBot()" disabled>Iniciar Bot</button>
+            <button id="stop-btn" onclick="stopBot()" disabled>Parar Bot</button>
+            <button id="delete-btn" onclick="deleteBot()" disabled>Excluir Bot</button>
+        </section>
+        <section id="logs-section">
+            <h2>Logs do Bot</h2>
+            <div id="logs" class="logs-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

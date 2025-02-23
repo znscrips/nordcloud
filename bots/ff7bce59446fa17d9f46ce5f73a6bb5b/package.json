@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "discord.js": "^14.14.1",
+    "mongoose": "^8.4.0",
+    "wio.db": "^4.0.22",
+    "mercadopago": "^1.5.17"
+  }
+}
